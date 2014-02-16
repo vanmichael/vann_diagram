@@ -2,8 +2,9 @@
 
 VannDiagram.Router.map(function() {
 
-  this.resource('posts', { path: '/posts' }, function() {
-
+  this.resource('posts', function() {
+    this.resource('post', { path: ':post_id' });
+    this.route('show', { path: ':post_id' });
   });
 
   this.route('about');
