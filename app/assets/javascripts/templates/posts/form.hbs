@@ -1,0 +1,12 @@
+<div>
+  <label for="">Title of Post</label>
+  {{ input value=title }}
+</div>
+
+<div>
+  <label for="">Write Post</label>
+  {{ input value=body}}
+</div>
+
+<button type="submit" {{ action save }}>Save</button>
+<button type="submit" {{ action cancel }}>Cancel</button>
