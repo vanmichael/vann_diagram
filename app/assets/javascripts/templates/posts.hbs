@@ -10,6 +10,11 @@
 
 <div class="row">
   <div class="large-3 columns">
+      <div class="post_list_item">
+        {{#link-to 'posts.new'}}
+          Create New Post
+        {{/link-to}}
+      </div>
     {{#each}}
       <div class="post_list_item">
         {{#link-to 'posts.show' this}}
